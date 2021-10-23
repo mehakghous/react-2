@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
+import Gate from './Gate';
+import MediaCard from './MediaCard';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MediaCard title="Shirt" body={<p>White T-shirt {<b>Rs: 4000</b>}</p>} imgUrl="https://fabricprinting.pk/wp-content/uploads/2020/07/Polo-Shirt-1.jpg" />
+      <Gate isOpen />
     </div>
   );
 }
